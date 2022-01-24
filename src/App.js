@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import 'react-device-detect';
+import { browserName } from 'react-device-detect';
 
 function App() {
+  //const name = 'Zen'
+  const email = "zenisbestwolf@gmail.com"
+  const twitter = "ZenIsBestWolf"
+  const website = "https://zen.gay"
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Hello {browserName} user.</h1>
+      <h2>Here is some information about what we think your device might be. You can change this information by editting the browser agent.</h2>
+      <p>No data is sent to any server, this is pure JS just doing it's thing (and a tool for the developer to learn how to use React).</p>
+      <p>This user has Social Media.</p>
+      <ul>
+        <li>Twitter: <a href={`https://twitter.com/${twitter}`}>@{twitter}</a></li>
+        <li>Email: <a href={`mailto:${email}`}>{email}</a></li>
+        <li>Main Website: <a href={website}>Here</a></li>
+      </ul>
     </div>
   );
 }
