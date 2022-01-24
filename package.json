@@ -2,7 +2,7 @@
   "name": "ReactSite",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://react.zen.gay"
+  "homepage": "https://react.zen.gay",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
