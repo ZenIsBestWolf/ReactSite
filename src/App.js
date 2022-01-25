@@ -9,7 +9,7 @@ function App() {
   const website = "https://zen.gay"
   
   return (
-    <div>
+    <div id="root">
       <h1>Hello {browserName} user.</h1>
       <h2>Here is some information about what we think your device might be. You can change this information by editting the browser agent.</h2>
       <p>No data is sent to any server, this is pure JS just doing it's thing (and a tool for the developer to learn how to use React).</p>
